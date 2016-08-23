@@ -56,16 +56,17 @@ and other open-source products.  If you like what you see, contribute to this an
 [`{nativeloop}`][] enables all features available through use of the Appcelerator Titantium product
 and adds many other cool features (and some undocumented hidden gems)!
 
-- ES2015/ES6 support (using babel transformations)
-- Support for Javascript promises (using bluebird but can be replaced with your own)
-- Uses the latest version of lodash, instead of older version of underscore.js
-- Supports installation of modules for your app using [`npm`][]
-- Does not require replacing Alloy (globally or per build of appcelerator)
-- Several free [`{nativeloop}`][] plugins developed by MobileHero are included and available now
-- Build and use your own [`{nativeloop}`][] plugins easily!
-- Customize which [`{nativeloop}`][] plugins run per project, platform or deployment type (dev,test,prod)!
-- Works great with Appcelerator LiveView! (🎉 _yay!!_ 🎉)
-- Support for lowercase-dashed syntax in your Alloy views
+
+- [x] ES2015/ES6 support (using babel transformations)
+- [ ] Supports Javascript promises (using bluebird but can be replaced with your own)
+- [x] Uses the latest version of lodash, instead of older version of underscore.js
+- [x] Supports installation of modules for your app using [`npm`][]
+- [x] Does not require replacing Alloy (globally or per build of appcelerator)
+- [x] Several free [`{nativeloop}`][] plugins developed by MobileHero are included and available now
+- [x] Build and use your own [`{nativeloop}`][] plugins easily!
+- [x] Customize which [`{nativeloop}`][] plugins run per project, platform or deployment type (dev,test,prod)!
+- [x] Works great with Appcelerator LiveView! (🎉 _yay!!_ 🎉)
+- [x] Support for lowercase-dashed syntax in your Alloy views
 
 
 ## Quick(est) Start
