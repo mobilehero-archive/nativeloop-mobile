@@ -38,14 +38,11 @@ var warn = debug('nativeloop');
 debug.log = console.info.bind(console);
 var alloyParser = require("./lib/alloy-parser");
 
-var nativeloop_widgets = [
-	"window",
-];
+var nativeloop_widgets = require("alloy-widget-nativeloop/lib/widgets");
 
 var CONST;
 var CU;
 var U;
-
 
 function handler() {}
 module.exports = handler;
@@ -63,8 +60,6 @@ handler.init = function(params) {
 		U: U,
 		nativeloop_widgets: nativeloop_widgets,
 	});
-
-
 
 	params.task("pre:load", handler.preload);
 	params.task("pre:compile", handler.precompile);
@@ -161,7 +156,7 @@ function configureTasks(tasks) {
 			return true;
 		} else {
 			// handler.logger.trace("adding task: " + JSON.stringify(task, null, 2));
-			configuredTasks.push(_.defaults(task, { weight: 1000 }));
+			configuredTasks.push(_.defaults(task, { weight: 1000, platforms: ["ios", "android", "mobileweb", "windows"] }));
 		}
 	});
 
@@ -201,7 +196,9 @@ function executeScripts(eventName, params) {
 
 	// handler.logger.trace("task to execute: " + JSON.stringify(handler.configuredTasks, null, 2));
 	// handler.logger.trace("handler.configuredTasks: " + JSON.stringify(handler.configuredTasks, null, 2));
-	var tasks = _.sortBy(_.filter(handler.configuredTasks || [], ['events', eventName]), "weight");
+	var tasks = _.sortBy(_.filter(handler.configuredTasks || [], (task) => {
+		return task.events === eventName && _.includes(task.platforms, handler.event.alloyConfig.platform);
+	}), "weight");
 	params = params || {};
 
 	_.forEach(tasks, function(task) {

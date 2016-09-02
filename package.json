@@ -1,6 +1,6 @@
 {
   "name": "@nativeloop/mobile",
-  "version": "0.0.2-beta.3",
+  "version": "0.0.2-beta.4",
   "description": "⚡ Developing native mobile apps just got a whole lot more awesome ⚡",
   "keywords": [
     "nativeloop",
@@ -53,6 +53,7 @@
     "resolve": "^1.1.7",
     "tiapp-dir": "0.0.4",
     "uglify-js": "^2.6.4",
-    "wrench": "^1.5.9"
+    "wrench": "^1.5.9",
+    "alloy-widget-nativeloop": "latest"
   }
 }
