@@ -1,6 +1,6 @@
 {
   "name": "@nativeloop/mobile",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "⭐  Axway Amplify module for using nativeloop mobile with Appcelerator Titanium SDK Framework",
   "keywords": [
     "nativeloop",
