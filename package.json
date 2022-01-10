@@ -1,6 +1,6 @@
 {
   "name": "@nativeloop/mobile",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "⭐  Axway Amplify module for using nativeloop mobile with Appcelerator Titanium SDK Framework",
   "keywords": [
     "nativeloop",
@@ -58,8 +58,8 @@
     "@geek/spawn": "^0.0.3",
     "@geek/spinner": "^1.0.2",
     "@geek/tld": "^2.0.1-1",
-    "@titanium/appcelerator": "^6.0.8",
-    "@titanium/bluebird": "^3.7.15",
+    "@titanium/appcelerator": "^6.0.9",
+    "@titanium/bluebird": "^3.7.16",
     "@titanium/errors": "^1.0.11",
     "@titanium/essentials": "^1.0.42",
     "@titanium/events": "^1.0.23",
@@ -69,8 +69,8 @@
     "@titanium/please": "^1.0.20",
     "@titanium/polyfill": "^1.0.21",
     "@titanium/querystring": "^1.0.8",
-    "@titanium/tiapp-xml": "^1.0.18",
-    "@titanium/titanium": "^5.4.15",
+    "@titanium/tiapp-xml": "^1.0.19",
+    "@titanium/titanium": "^5.4.16",
     "@titanium/turbo": "^2.2.32"
   }
 }
